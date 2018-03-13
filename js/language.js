@@ -1,6 +1,6 @@
 var objShowName = 
 {
-	"EN":{
+	"US":{
 		"Wst": "Main weapon",
 		"Clt": "Clothes",
 		"Hed": "Head Gear",
