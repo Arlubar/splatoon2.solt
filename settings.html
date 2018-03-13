@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <meta name="interface" content="desktop"/>
+
+    <title>Splatoon 2 WeaponSlots Machine</title>
+
+    <!-- <link href='http://fonts.googleapis.com/css?family=Slackey' rel='stylesheet' type='text/css'/> -->
+    <link href='css/SlackeyFont.css?v=1' rel='stylesheet' type='text/css'/>
+    <link type="text/css" rel="stylesheet" href="css/reset.css?v=1"/>
+    <link type="text/css" rel="stylesheet" href="css/slot.css?v=1"/>
+
+</head>
+<body>
+<div id="viewport">
+    <div id="container">
+        <div id="header">
+            <h1>Splatoon 2 WeaponSlots</h1>
+
+            <h3>Settings - But GreatBW-TW are still despicable</h3>
+        </div>
+		
+		<form id="form1" action="index.html">
+	       	<div id="dropdownlist">
+	       		RollNum：
+	       		<select id="rollNum" name="rollNum">
+	       			<option value ="1">1</option>
+	       			<option value ="2">2</option>
+	       			<option value ="3">3</option>
+	       			<option value ="4">4</option>
+	       			<option value ="5">5</option>
+	       			<option value ="6">6</option>
+	       			<option value ="7">7</option>
+	       			<option value ="8">8</option>
+	       		</select>
+	    		<!-- 
+	    		<select id="mute" name="mute" style="dispaly:none;">
+	       			<option value ="1">True</option>
+	       			<option value ="0">False</option>
+	       		</select>
+	       		 -->
+	       		<input type="hidden" id="mute" name="mute" value="0"/>
+				<input type="hidden" id="lenguage" name="lenguage" value="TW"/>
+				<img alt="" src="img/speaker.png" id="muteBtn" name="muteBtn" onclick="muteBtnClick();">
+				<img alt="" src="img/flag/tw.png" id="muteBtn" name="muteBtn" onclick="languageBtnClick('TW');">
+				<img alt="" src="img/flag/us.png" id="muteBtn" name="muteBtn" onclick="languageBtnClick('US');">
+	       	</div>
+       	</form>
+
+        <div id="buttons">
+            <div role="button" tabindex="0" id="Done" class="button button-default" onclick="document.forms.form1.submit();">Done</div>
+        </div>
+
+        <div id="audio_debug">Audio not supported</div>
+    </div>
+
+    <!-- <input id="debug" type="button" value="Toggle Reels"/> -->
+</div>
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+<script type="text/javascript" src="js/jquery.min.js?v=1"></script>
+<script type="text/javascript" src="js/language.js?v=1"></script>
+<script type="text/javascript" src="js/slot.js?v=1"></script>
+<script type="text/javascript">$(function () {settings_load(); });</script>
+</body>
+</html>
